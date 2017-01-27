@@ -22,7 +22,7 @@
 		<servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
-			<param-value>com.itruett.introspect.rest.IntrospectRestApi</param-value>
+			<param-value>com.itruett.introspect.api.IntrospectRestApi</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

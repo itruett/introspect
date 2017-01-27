@@ -21,6 +21,13 @@ public class ManifestIntrospector {
 	}
 
 	/**
+	 * No-arg constructor that uses this classes's {@link ClassLoader}.
+	 */
+	public ManifestIntrospector() {
+		this(ManifestIntrospector.class.getClassLoader());
+	}
+
+	/**
 	 * Tries to get the {@link Manifest} from this ManifestIntrospector's {@link ClassLoader}. Returns {@code null} if
 	 * the {@code MANIFEST.MF} file is not found.
 	 *
